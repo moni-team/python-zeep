@@ -185,7 +185,7 @@ class SoapBinding(Binding):
             if isinstance(client.wsse, list):
                 for wsse in client.wsse:
                     wsee.verify(doc)
-            else:
+             else:
                 client.wsse.verify(doc)	
 
         doc, http_headers = plugins.apply_ingress(
