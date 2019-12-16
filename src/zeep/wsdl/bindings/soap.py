@@ -181,7 +181,7 @@ class SoapBinding(Binding):
             if process_xop(doc, message_pack):
                 message_pack = None
 
-	if client.wsse:
+        if client.wsse:
             if isinstance(client.wsse, list):
                 for wsse in client.wsse:
                     wsee.verify(doc)
