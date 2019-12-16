@@ -184,7 +184,7 @@ class SoapBinding(Binding):
         if client.wsse:
             if isinstance(client.wsse, list):
                 for wsse in client.wsse:
-                    client.wsse.verify(doc)
+                    wsse.verify(doc)
             else:
                 client.wsse.verify(doc)	
 
